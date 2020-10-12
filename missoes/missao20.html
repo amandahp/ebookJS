@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nomes = [];
+        var telefones = [];
+        var cidade = []
+        var novoContato = "S";
+        var i = 0;
+
+        while(novoContato == "S"){
+            nomes[i] = prompt("Informe um nome: ", "");
+            telefones[i] = prompt("Informe o telefone: ", "");
+            cidade[i] = prompt("Informe a cidade: ", "");
+            novoContato = prompt("Cadsatrar novo contato? \n[S]im\n[N]ão");
+            i++;
+        }
+
+        for(i=0; i < nomes.length; i++){
+            console.log("Nome: " + nomes[i]);
+            console.log("Telefone: " + telefones[i]);
+            console.log("Cidade: " + cidade[i]);
+            console.log("\n");
+        }
+    </script>
+    
+</body>
+</html>

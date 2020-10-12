@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var media = 0, nota = 0, i = 0;
+        var nome = prompt("Informe o nome do aluno: ", "Digite aqui");
+
+        while(i < 4){
+            nota = prompt("Informe a nota do aluno " + nome, "Digite aqui");
+            if(isNaN(nota)){
+                alert("Você não digitou um núemro válido");
+            }else{
+                media = parseFloat(media) + parseFloat(nota);
+                i++;
+            }
+        }
+
+            media = media / 4;
+
+            document.write("A média de " + nome + ", é: ")
+            document.write("<br>");
+            document.write("<strong>  ");
+                document.write(media.toFixed(1));
+            document.write("</strong>");
+          
+
+        
+    </script>
+    
+</body>
+</html>

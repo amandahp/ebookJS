@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var classificacao = [];
+        var filmes = ["LOTR", "Star Wars", "Batman", "Os Vingadores"];
+
+        function Classificacao(){
+            alert("Informe uma classificacao de 1 a 5 estrelas para cada filme");
+            for(i = 0; i < filmes.length; i++){
+                classificacao[i] = prompt("Informe a quantidade de estrelas para o filme: " + filmes[i], "Digite aqui");
+
+            }
+        }
+
+        function ExibirClassificacao(){
+            var numEstrelas = "";
+            for (i=0; i < filmes.length; i++){
+                numEstrelas = "";
+                for(iEstrelas = 1; iEstrelas <=classificacao[i]; iEstrelas++){
+                    numEstrelas += "*";
+                }
+                console.log(filmes[i] + ":  " + numEstrelas + " estrelas.");
+            }
+        }
+
+        Classificacao();
+        ExibirClassificacao();
+    </script>
+    
+</body>
+</html>

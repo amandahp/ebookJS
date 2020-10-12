@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nomeCurso = prompt("Informe o nome do curso", "Digite aqui")
+        var codigoCurso = prompt("Informe o codigo do curso", "Digite aqui");
+        var novoConteudo = "S";
+        var conteudoTemp = "";
+        var conteudoCurso = [];
+        var i = 0;
+
+        while(novoConteudo == "S"){
+            conteudoTemp = prompt("Informe o conteúdo do curso: ", "Digite aqui");
+            conteudoCurso.push(conteudoTemp);
+            novoConteudo = prompt("Deseja cadastrar um um novo conteúdo para o curso? \n[S]im\n[N]ão", "Digite aqui");
+        }
+        console.clear();
+        console.log("Código: " + codigoCurso);
+        console.log("Curso: " + nomeCurso);
+        console.log("Conteúdo: ");
+        while(i < conteudoCurso.length){
+            console.log(conteudoCurso[i]);
+            i++;
+        }
+    </script>
+</body>
+</html>

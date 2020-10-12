@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var carros = ["Uno", "Gol", "SW-4", "HB-20", "Clio", "Sandero"];
+        /**console.dir(carros);
+        console.log(carros);
+        console.warn(carros);
+        console.error(carros);*/
+        console.table(carros);
+        carros[1] = "Passat";
+        carros.pop() //remover o último item da array
+        carros.push("Camaro"); //adicionar outro item a array
+        carros.push("S-10");
+        console.table(carros);
+
+        
+    </script>
+    
+</body>
+</html>

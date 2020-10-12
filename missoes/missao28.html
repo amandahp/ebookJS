@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function operacao(total, porcentagem, operacao){
+            var valor_porcentagem = porcentagem/100*total;
+            var total_pagar = 0;
+            if(operacao == "acrescimo"){
+                //acrescimo
+                total_pagar = total + valor_porcentagem;
+            }else{
+                //desconto
+                total_pagar = total - valor_porcentagem;
+            }
+
+            console.log("Total a pagar: R$ " + total_pagar.toFixed(2));
+        }
+    </script>
+    
+</body>
+</html>

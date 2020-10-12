@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**function Multiplicacao(){
+            var resultado = 0;
+            var n1 = prompt("Informe o primeiro número: ", "Digite aqui");
+            var n2 = prompt("Informe o segundo número: ", "Digite aqui");
+            
+            resultado = n1 * n2;
+            document.write("O resultado é " + resultado);
+        }
+
+        Multiplicacao();*/
+
+        function Media(){
+            var media = 0, nota = 0, i = 0;
+            var nome = prompt("Informe o nome do aluno(a): ", "Digite aqui");
+
+            while(i< 4){
+                nota = prompt("Informe a nota do aluno(a) " + nome, "Digite aqui");
+                if(isNaN(nota)){
+                    alert("Você não digitou um número válido");
+                }else{
+                    media = parseFloat(media) + parseFloat(nota);
+                    i++;
+                }
+            }
+            
+            media = media / 4;
+            document.write("Aluno(a): " + nome);
+            document.write("<br>");
+            document.write("Media: " + media);
+        }
+
+        Media();
+    </script>
+    
+</body>
+</html>
