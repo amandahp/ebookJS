@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var quantidadeDeNumeros = 0;
+        var novoNumero = "S";
+        var media = 0;
+        var somaNumeros = 0;
+        var numero = 0;
+
+        while(novoNumero == "S"){
+            numero = prompt("Informe um numero", "Digite aqui");
+            somaNumeros = parseFloat(somaNumeros) +  parseFloat(numero);
+            quantidadeDeNumeros = quantidadeDeNumeros + 1;
+            novoNumero = prompt("Deseja informar mais um numero? \n[S]im\n[N]ão");
+        }
+
+        media = somaNumeros/quantidadeDeNumeros;
+
+        alert("A media dos numeros informados é: " + media);
+    </script>
+    
+</body>
+</html>
